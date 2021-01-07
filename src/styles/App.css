@@ -1,0 +1,42 @@
+.App {
+  text-align: left;
+  background-color: #6683bd;
+  min-height: 100vh;
+}
+
+.Main-Pic {
+  height: 50vmin;
+  pointer-events: none;
+  position: absolute;
+  right: 0%;
+  top: 5%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Main-Pic {
+    animation: Main-Pic-Movement linear infinite alternate 0.5s;
+    margin-right: 5%;
+    margin-top: 5%;
+    height: 300px;
+  }
+}
+
+.App-header {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+@keyframes Main-Pic-Movement {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
