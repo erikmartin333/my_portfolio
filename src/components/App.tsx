@@ -1,17 +1,22 @@
 import React from "react";
 import picturelizard from "../picturelizard.svg";
+import twitter2 from "../twitter.png";
+import linkedin from "../linkedin.png";
+import github from "../github.svg";
+import avatar from "../avatar.webp";
 import "../styles/App.css";
-import { H1, P, Footer, Ul, A } from "../styles/styles";
+import { H1, P, Footer, A, SubHeadings } from "../styles/styles";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <H1> Erik Martin Estevez</H1>
-        <img src={picturelizard} className="Main-Pic" alt="picturelizard" />
+        <img src={avatar} className="Main-Pic2" alt="avatar" />
       </header>
 
       <body>
+        <SubHeadings>Bio</SubHeadings>
         <P>
           My name is Erik and I am an international student from Spain that is
           currently doing a Computer Science Bachelor at Murdoch University.
@@ -22,22 +27,44 @@ function App() {
           <A href="https://www.climateclever.org/">ClimateClever</A>
           &nbsp;during January and February.
         </P>
+        <SubHeadings>Projects</SubHeadings>
+        <table>
+          <tr>
+            <th>
+              <img
+                src={picturelizard}
+                className="Main-Pic"
+                alt="picturelizard"
+              />
+            </th>
+            <th>
+              <img
+                src={picturelizard}
+                className="Main-Pic"
+                alt="picturelizard"
+              />
+            </th>
+            <th>
+              <img
+                src={picturelizard}
+                className="Main-Pic"
+                alt="picturelizard"
+              />
+            </th>
+          </tr>
+        </table>
       </body>
 
       <Footer>
-        <Ul>
-          <li>
-            <A href="https://github.com/erikmartin333">GitHub</A>
-          </li>
-          <li>
-            <A href="https://www.linkedin.com/in/erik-martin-estevez-4006871bb">
-              Linkedin
-            </A>
-          </li>
-          <li>
-            <A href="https://twitter.com/erikmartin333">Twitter</A>
-          </li>
-        </Ul>
+        <a href="https://github.com/erikmartin333">
+          <img src={github} className="SocialMedia" alt="gihub" />
+        </a>
+        <a href="https://twitter.com/erikmartin333">
+          <img src={twitter2} className="SocialMedia" alt="twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/erik-martin-estevez-4006871bb">
+          <img src={linkedin} className="SocialMedia" alt="linkedin" />
+        </a>
       </Footer>
     </div>
   );

@@ -1,24 +1,53 @@
 .App {
-  text-align: left;
+  text-align: center;
   background-color: #6683bd;
-  min-height: 100vh;
+  min-height: 270vh;
 }
 
 .Main-Pic {
   height: 50vmin;
   pointer-events: none;
-  position: absolute;
+  position: center;
   right: 0%;
-  top: 5%;
+}
+
+.Main-Pic2 {
+  height: 40vmin;
+  pointer-events: none;
+  position: center;
+  margin-bottom: 30px;
+  right: 0%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .Main-Pic {
     animation: Main-Pic-Movement linear infinite alternate 0.5s;
-    margin-right: 5%;
-    margin-top: 5%;
-    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    height: 350px;
   }
+}
+
+.SocialMedia {
+  height: 8vmin;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: auto;
+  position: center;
+  right: 0%;
+}
+
+table,
+th,
+td {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border: 1px solid black;
 }
 
 .App-header {
@@ -26,7 +55,7 @@
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
