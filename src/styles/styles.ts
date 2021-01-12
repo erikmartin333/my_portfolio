@@ -18,6 +18,7 @@ export const SubHeadings = styled.h1({
 
 export const P = styled.p({
   fontSize: 40,
+  color: "white",
   marginLeft: "7%",
   marginRight: "7%",
   marginTop: "0px",
@@ -28,13 +29,18 @@ export const P = styled.p({
 
 export const Footer = styled.footer({
   background: "midnightblue",
-  color: "white",
   width: "100%",
   position: "fixed",
   bottom: "0",
 });
 
 export const A = styled.a({
-  color: "white",
+  color: "yellow",
   textDecoration: "none",
+});
+
+export const Span = styled.span({
+  color: "white",
+  fontSize: 70,
+  backgroundColor: "black",
 });

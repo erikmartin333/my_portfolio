@@ -1,7 +1,9 @@
 .App {
   text-align: center;
+  background-image: url("../../src/background2.jpg");
+  background-size: 100%, 1500px;
   background-color: #6683bd;
-  min-height: 270vh;
+  min-height: 330vh;
 }
 
 .Main-Pic {
@@ -14,9 +16,9 @@
 .Main-Pic2 {
   height: 40vmin;
   pointer-events: none;
-  position: center;
   margin-bottom: 30px;
-  right: 0%;
+  border-radius: 50%;
+  background-color: midnightblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,6 +27,7 @@
     margin-top: 0px;
     margin-bottom: 30px;
     height: 350px;
+    fill: green;
   }
 }
 
@@ -48,6 +51,39 @@ td {
   margin-right: auto;
   margin-bottom: 50px;
   border: 1px solid black;
+}
+
+form {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 7px solid black;
+  height: 230px;
+  text-align: right;
+  background-image: url("../../src/perth+cbd.png");
+  background-size: 100%, 80%;
+}
+
+.name,
+.email {
+  width: 30%;
+  margin-right: 10%;
+}
+
+b {
+  margin-right: 240px;
+  color: white;
+}
+
+.message {
+  width: 30%;
+  margin-right: 10%;
+  line-height: 3em;
+}
+
+.submitButton {
+  margin-right: 19%;
+  line-height: 3em;
+  text-align: center;
 }
 
 .App-header {
