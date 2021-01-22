@@ -1,9 +1,21 @@
 import React from "react";
+//IMPORT PICS
 import picturelizard from "../picturelizard.svg";
 import twitter2 from "../twitter.png";
 import linkedin from "../linkedin.png";
 import github from "../github.svg";
 import avatar from "../avatar.svg";
+import birds from "../birds.gif";
+import cat from "../cat.gif";
+
+import html from "../skills/HTML.png";
+import c from "../skills/C.webp";
+import css from "../skills/CSS.png";
+import java from "../skills/Java.webp";
+import javaScript from "../skills/JavaScript.png";
+import mysql from "../skills/mySQL.png";
+import react from "../skills/React.png";
+
 import "../styles/App.css";
 import { H1, P, Footer, A, SubHeadings, Span } from "../styles/styles";
 
@@ -11,12 +23,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="FlyingBirds">
+          <img src={birds} alt="birds" />
+        </div>
         <H1> Erik Martin Estevez</H1>
+
         <img src={avatar} className="Main-Pic2" alt="avatar" />
       </header>
 
       <body>
         <SubHeadings>Bio</SubHeadings>
+        <img src={picturelizard} className="Tiny-Pic" alt="picturelizard" />
         <P>
           My name is Erik and I am an international student from Spain that is
           currently doing a Computer Science Bachelor at Murdoch University.
@@ -31,48 +48,42 @@ function App() {
         <table>
           <tr>
             <th>
-              <img
-                src={picturelizard}
-                className="Main-Pic"
-                alt="picturelizard"
-              />
+              <img src={cat} className="Cat-Pic" alt="cat" />
             </th>
             <th>
-              <img
-                src={picturelizard}
-                className="Main-Pic"
-                alt="picturelizard"
-              />
+              <img src={cat} className="Cat-Pic" alt="cat" />
             </th>
             <th>
-              <img
-                src={picturelizard}
-                className="Main-Pic"
-                alt="picturelizard"
-              />
+              <img src={cat} className="Cat-Pic" alt="cat" />
             </th>
           </tr>
         </table>
+        <SubHeadings>Skills</SubHeadings>
+        <img src={html} className="icons" alt="icons" />
+        <img src={css} className="icons" alt="icons" />
+        <img src={javaScript} className="icons" alt="icons" />
+        <br />
+        <img src={c} className="icons" alt="icons" />
+        <img src={java} className="icons" alt="icons" />
+        <img src={mysql} className="icons" alt="icons" />
+        <img src={react} className="icons" alt="icons" />
+        <br />
+        <br />
         <br />
         <Span>LET'S CHAT</Span>
         <form action="mailto:erik.martin007@gmail.com" method="post">
-          <span>
-            <b>NAME:</b>
-          </span>
+          <div>
+            <label htmlFor="name-input">Name:</label>
+            <input id="name-input" type="text" className="name" required />
+          </div>
+          <div>
+            <label>Email:</label>
+            <input id="email-input" type="text" className="email" required />
+          </div>
           <br />
-          <input type="text" className="name" />
-          <br />
-          <span>
-            <b>EMAIL:</b>
-          </span>
-          <br />
-          <input type="text" className="email" />
-          <br />
-          <span>
-            <b>TEXT:</b>
-          </span>
-          <br />
-          <textarea className="message" />
+          <div>
+            <textarea id="message-input" className="message" required />
+          </div>
           <br />
           <input
             type="submit"

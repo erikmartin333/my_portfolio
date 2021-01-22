@@ -9,7 +9,7 @@ export const H1 = styled.h1({
 });
 
 export const SubHeadings = styled.h1({
-  color: "MistyRose",
+  color: "darkgreen",
   fontSize: 70,
   marginTop: "0px",
   marginBottom: "30px",
@@ -18,9 +18,9 @@ export const SubHeadings = styled.h1({
 
 export const P = styled.p({
   fontSize: 40,
-  color: "white",
-  marginLeft: "7%",
-  marginRight: "7%",
+  color: "black",
+  marginLeft: "120px",
+  marginRight: "120px",
   marginTop: "0px",
   marginBottom: "50px",
   textAlign: "center",
@@ -35,12 +35,12 @@ export const Footer = styled.footer({
 });
 
 export const A = styled.a({
-  color: "yellow",
+  color: "olive",
   textDecoration: "none",
 });
 
 export const Span = styled.span({
   color: "white",
   fontSize: 70,
-  backgroundColor: "black",
+  backgroundColor: "transparent",
 });

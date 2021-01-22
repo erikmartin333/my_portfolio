@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url("../../src/background2.jpg");
+  background-image: url("../../src/background.png");
   background-size: 100%, 1500px;
   background-color: #6683bd;
   min-height: 330vh;
@@ -11,6 +11,30 @@
   pointer-events: none;
   position: center;
   right: 0%;
+}
+
+.Cat-Pic {
+  height: 40vmin;
+  pointer-events: none;
+  position: center;
+  right: 0%;
+}
+
+.icons {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.icons:hover {
+  transform: scale(1.5);
+}
+
+.Tiny-Pic {
+  height: 50vmin;
+  pointer-events: none;
+  position: absolute;
+  right: 30px;
 }
 
 .Main-Pic2 {
@@ -26,8 +50,13 @@
     animation: Main-Pic-Movement linear infinite alternate 0.5s;
     margin-top: 0px;
     margin-bottom: 30px;
-    height: 350px;
-    fill: green;
+    height: 300px;
+  }
+  .Tiny-Pic {
+    animation: Main-Pic-Movement linear infinite alternate 0.5s;
+    margin-top: -150px;
+    margin-bottom: 30px;
+    height: 200px;
   }
 }
 
@@ -56,7 +85,7 @@ td {
 form {
   margin-left: 10%;
   margin-right: 10%;
-  border: 7px solid black;
+  border: 7px solid white;
   height: 230px;
   text-align: right;
   background-image: url("../../src/perth+cbd.png");
@@ -65,6 +94,7 @@ form {
 
 .name,
 .email {
+  margin-top: 15px;
   width: 30%;
   margin-right: 10%;
 }
@@ -103,5 +133,19 @@ b {
   }
   to {
     transform: rotate(10deg);
+  }
+}
+
+.FlyingBirds {
+  position: absolute;
+  animation: FlyingBirds-Movement 8s infinite;
+}
+
+@keyframes FlyingBirds-Movement {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -35%;
   }
 }
