@@ -26,7 +26,7 @@ function App() {
         <div className="FlyingBirds">
           <img src={birds} alt="birds" />
         </div>
-        <H1> Erik Martin Estevez</H1>
+        <H1> Erik Martin Estevez Angie Chisin</H1>
 
         <img src={avatar} className="Main-Pic2" alt="avatar" />
       </header>
