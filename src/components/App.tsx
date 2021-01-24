@@ -6,7 +6,7 @@ import linkedin from "../linkedin.png";
 import github from "../github.svg";
 import avatar from "../avatar.svg";
 import birds from "../birds.gif";
-import cat from "../cat.gif";
+//import cat from "../cat.gif";
 
 import html from "../skills/HTML.png";
 import c from "../skills/C.webp";
