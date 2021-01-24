@@ -17,11 +17,23 @@ import mysql from "../skills/mySQL.png";
 import react from "../skills/React.png";
 
 import "../styles/App.css";
-import { H1, P, Footer, A, SubHeadings, Span } from "../styles/styles";
+import {
+  Website,
+  H1,
+  P,
+  Footer,
+  A,
+  SubHeadings,
+  Span,
+  Table,
+  Column,
+  Form,
+} from "../styles/styles";
 
 function App() {
   return (
-    <div className="App">
+    <Website>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
       <header className="App-header">
         <div className="FlyingBirds">
           <img src={birds} alt="birds" />
@@ -45,19 +57,17 @@ function App() {
           &nbsp;during January and February of 2021.
         </P>
         <SubHeadings>Projects</SubHeadings>
-        <table>
-          <tr>
-            <th>
-              <img src={cat} className="Cat-Pic" alt="cat" />
-            </th>
-            <th>
-              <img src={cat} className="Cat-Pic" alt="cat" />
-            </th>
-            <th>
-              <img src={cat} className="Cat-Pic" alt="cat" />
-            </th>
-          </tr>
-        </table>
+        <Table>
+          <Column>
+            <img src={cat} className="Cat-Pic" alt="cat" />
+          </Column>
+          <Column>
+            <img src={cat} className="Cat-Pic" alt="cat" />
+          </Column>
+          <Column>
+            <img src={cat} className="Cat-Pic" alt="cat" />
+          </Column>
+        </Table>
         <SubHeadings>Skills</SubHeadings>
         <img src={html} className="icons" alt="icons" />
         <img src={css} className="icons" alt="icons" />
@@ -71,7 +81,7 @@ function App() {
         <br />
         <br />
         <Span>LET'S CHAT</Span>
-        <form action="mailto:erik.martin007@gmail.com" method="post">
+        <Form action="mailto:erik.martin007@gmail.com" method="post">
           <div>
             <label htmlFor="name-input">Name:</label>
             <input id="name-input" type="text" className="name" required />
@@ -90,7 +100,13 @@ function App() {
             className="submitButton"
             value="Submit Query 😁"
           />
-        </form>
+        </Form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </body>
 
       <Footer>
@@ -104,7 +120,7 @@ function App() {
           <img src={linkedin} className="SocialMedia" alt="linkedin" />
         </a>
       </Footer>
-    </div>
+    </Website>
   );
 }
 
