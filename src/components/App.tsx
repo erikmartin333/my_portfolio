@@ -28,6 +28,7 @@ import {
   Table,
   Column,
   Form,
+  PerthImage,
 } from "../styles/styles";
 
 function App() {
@@ -82,24 +83,26 @@ function App() {
         <br />
         <Span>LET'S CHAT</Span>
         <Form action="mailto:erik.martin007@gmail.com" method="post">
-          <div>
-            <label htmlFor="name-input">Name:</label>
-            <input id="name-input" type="text" className="name" required />
-          </div>
-          <div>
-            <label>Email:</label>
-            <input id="email-input" type="text" className="email" required />
-          </div>
-          <br />
-          <div>
-            <textarea id="message-input" className="message" required />
-          </div>
-          <br />
-          <input
-            type="submit"
-            className="submitButton"
-            value="Submit Query 😁"
-          />
+          <PerthImage>
+            <div>
+              <label htmlFor="name-input">Name:</label>
+              <input id="name-input" type="text" className="name" required />
+            </div>
+            <div>
+              <label>Email:</label>
+              <input id="email-input" type="text" className="email" required />
+            </div>
+            <br />
+            <div>
+              <textarea id="message-input" className="message" required />
+            </div>
+            <br />
+            <input
+              type="submit"
+              className="submitButton"
+              value="Submit Query 😁"
+            />
+          </PerthImage>
         </Form>
         <br />
         <br />
