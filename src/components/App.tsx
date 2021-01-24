@@ -29,6 +29,8 @@ import {
   Column,
   Form,
   PerthImage,
+  LIZZARD,
+  Container,
 } from "../styles/styles";
 
 function App() {
@@ -45,26 +47,29 @@ function App() {
 
       <body>
         <SubHeadings>Bio</SubHeadings>
-        <P>
-          My name is Erik and I am an international student from Spain that is
-          currently doing a Computer Science Bachelor at Murdoch University.
-          <br />
-          <br />
-          Furthermore, I work in a Cafe in Fremantle as a waiter and also doing
-          an internship at&nbsp;
-          <A href="https://www.climateclever.org/">ClimateClever</A>
-          &nbsp;during January and February of 2021.
-        </P>
+        <Container>
+          <P>
+            My name is Erik and I am an international student from Spain that is
+            currently doing a Computer Science Bachelor at Murdoch University.
+            <br />
+            <br />
+            Furthermore, I work in a Cafe in Fremantle as a waiter and also
+            doing an internship at&nbsp;
+            <A href="https://www.climateclever.org/">ClimateClever</A>
+            &nbsp;during January and February of 2021.
+          </P>
+        </Container>
+
         <SubHeadings>Projects</SubHeadings>
         <Table>
           <Column>
-            <img src={cat} className="Cat-Pic" alt="cat" />
+            PROJECT 1{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
           </Column>
           <Column>
-            <img src={cat} className="Cat-Pic" alt="cat" />
+            PROJECT 2{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
           </Column>
           <Column>
-            <img src={cat} className="Cat-Pic" alt="cat" />
+            PROJECT 3{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
           </Column>
         </Table>
         <SubHeadings>Skills</SubHeadings>
@@ -80,16 +85,26 @@ function App() {
         <br />
         <br />
         <Span>LET'S CHAT</Span>
+        <br />
         <Form action="mailto:erik.martin007@gmail.com" method="post">
-          <img src={picturelizard} className="Lizard-Pic" alt="picturelizard" />
-
+          <LIZZARD>
+            <img
+              src={picturelizard}
+              className="Lizard-Pic"
+              alt="picturelizard"
+            />
+          </LIZZARD>
           <PerthImage>
             <div>
-              <label htmlFor="name-input">Name:</label>
+              <label className="label-font">
+                <b>Name:</b>
+              </label>
               <input id="name-input" type="text" className="name" required />
             </div>
             <div>
-              <label>Email:</label>
+              <label className="label-font">
+                <b>Email:</b>
+              </label>
               <input id="email-input" type="text" className="email" required />
             </div>
             <br />

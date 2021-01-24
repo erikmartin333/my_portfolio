@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
-import PerthCity from "../../src/perth+cbd.png";
+import PerthCity from "../../src/sunset.jpg";
 
 // BACKGROUND IMAGES
 
 export const PerthImage = styled.div`
+  background-size: 600px;
   background-image: url(${PerthCity});
 `;
 
@@ -31,6 +32,11 @@ export const SubHeadings = styled.h1({
   textAlign: "center",
 });
 
+export const Container = styled.div({
+  marginLeft: "10%",
+  marginRight: "10%",
+});
+
 export const P = styled.p({
   width: "100%",
   fontSize: "200%",
@@ -47,7 +53,7 @@ export const Footer = styled.footer({
 });
 
 export const Table = styled.table({
-  //tableLayout: "fixed",
+  width: "80%",
   marginLeft: "auto",
   marginRight: "auto",
   marginBottom: "50px",
@@ -62,12 +68,13 @@ export const Column = styled.th({
 });
 
 export const Form = styled.form({
+  border: "7px solid white",
   marginLeft: "10%",
   marginRight: "10%",
-  border: "7px solid white",
-  height: "230px",
-  textAlign: "right",
-  backgroundColor: "green",
+  width: "40%",
+  height: "50%",
+  display: "inline-block",
+  textAlign: "left",
 });
 
 export const A = styled.a({
@@ -88,3 +95,9 @@ export const mediaQueries: string[] = breakpoints.map(
   (bp) => `@media (max-width: ${bp}px)`
 );
 //END HELPERS
+
+export const LIZZARD = styled.div({
+  [mediaQueries[1]]: {
+    display: "none",
+  },
+});
