@@ -18,7 +18,7 @@ export const Website = styled.div({
 
 export const H1 = styled.h1({
   color: "purple",
-  fontSize: "100px",
+  fontSize: "400%",
   marginTop: "100px",
   textAlign: "center",
 });
@@ -32,14 +32,11 @@ export const SubHeadings = styled.h1({
 });
 
 export const P = styled.p({
-  fontSize: "40px",
+  width: "100%",
+  fontSize: "200%",
   color: "black",
-  marginLeft: "120px",
-  marginRight: "120px",
-  marginTop: "0px",
   marginBottom: "50px",
-  textAlign: "center",
-  fontWeight: "bold",
+  //fontWeight: "bold",
 });
 
 export const Footer = styled.footer({
@@ -50,8 +47,7 @@ export const Footer = styled.footer({
 });
 
 export const Table = styled.table({
-  tableLayout: "auto",
-  width: "50%",
+  //tableLayout: "fixed",
   marginLeft: "auto",
   marginRight: "auto",
   marginBottom: "50px",

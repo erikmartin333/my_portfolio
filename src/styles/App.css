@@ -22,9 +22,7 @@
   transform: scale(1.5);
 }
 
-.Tiny-Pic {
-  height: 50vmin;
-  pointer-events: none;
+.Lizard-Pic {
   position: absolute;
   right: 30px;
 }
@@ -44,11 +42,11 @@
     margin-bottom: 30px;
     height: 300px;
   }
-  .Tiny-Pic {
+  .Lizard-Pic {
     animation: Main-Pic-Movement linear infinite alternate 0.5s;
     margin-top: -150px;
-    margin-bottom: 30px;
-    height: 200px;
+    height: 30%;
+    position: absolute;
   }
 }
 

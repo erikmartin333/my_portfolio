@@ -34,10 +34,9 @@ import {
 function App() {
   return (
     <Website>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
       <header className="App-header">
         <div className="FlyingBirds">
-          <img src={birds} alt="birds" />
+          <img src={birds} alt="birds" width="300px" />
         </div>
         <H1> Erik Martin Estevez</H1>
 
@@ -46,7 +45,6 @@ function App() {
 
       <body>
         <SubHeadings>Bio</SubHeadings>
-        <img src={picturelizard} className="Tiny-Pic" alt="picturelizard" />
         <P>
           My name is Erik and I am an international student from Spain that is
           currently doing a Computer Science Bachelor at Murdoch University.
@@ -83,6 +81,8 @@ function App() {
         <br />
         <Span>LET'S CHAT</Span>
         <Form action="mailto:erik.martin007@gmail.com" method="post">
+          <img src={picturelizard} className="Lizard-Pic" alt="picturelizard" />
+
           <PerthImage>
             <div>
               <label htmlFor="name-input">Name:</label>
