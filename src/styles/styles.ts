@@ -6,6 +6,7 @@ import PerthCity from "../../src/sunset.jpg";
 export const PerthImage = styled.div`
   background-size: 600px;
   background-image: url(${PerthCity});
+  height: 250px;
 `;
 
 //types
@@ -71,8 +72,8 @@ export const Form = styled.form({
   border: "7px solid white",
   marginLeft: "10%",
   marginRight: "10%",
-  width: "40%",
-  height: "50%",
+  width: "500px",
+  height: "250px",
   display: "inline-block",
   textAlign: "left",
 });

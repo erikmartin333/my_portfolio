@@ -9,9 +9,9 @@ import birds from "../birds.gif";
 //import cat from "../cat.gif";
 
 import html from "../skills/HTML.png";
-import c from "../skills/C.webp";
+import c from "../skills/C.png";
 import css from "../skills/CSS.png";
-import java from "../skills/Java.webp";
+import java from "../skills/Java.png";
 import javaScript from "../skills/JavaScript.png";
 import mysql from "../skills/mySQL.png";
 import react from "../skills/React.png";
