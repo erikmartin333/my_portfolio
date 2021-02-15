@@ -98,7 +98,7 @@ export const mediaQueries: string[] = breakpoints.map(
 //END HELPERS
 
 export const LIZZARD = styled.div({
-  [mediaQueries[1]]: {
+  [mediaQueries[2]]: {
     display: "none",
   },
 });

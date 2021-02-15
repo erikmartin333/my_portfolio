@@ -53,23 +53,25 @@ function App() {
             currently doing a Computer Science Bachelor at Murdoch University.
             <br />
             <br />
-            Furthermore, I work in a Cafe in Fremantle as a waiter and also
-            doing an internship at&nbsp;
-            <A href="https://www.climateclever.org/">ClimateClever</A>
-            &nbsp;during January and February of 2021.
+            Furthermore, I work in a Cafe in Fremantle called "
+            <A href="https://www.theatticfreo.com.au/">The Attic</A>" as a
+            waiter. I also play basketball for the LGBTIQ Basketball Club "
+            <A href="https://www.spectresaustralia.com/">Spectres</A>"&nbsp;
           </P>
         </Container>
 
         <SubHeadings>Projects</SubHeadings>
         <Table>
           <Column>
-            PROJECT 1{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
+            EQUATION SOLVER
+            {/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
           </Column>
           <Column>
-            PROJECT 2{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
+            TO DO LIST{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
           </Column>
           <Column>
-            PROJECT 3{/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
+            ORDERING NUMBERS
+            {/* <img src={cat} className="Cat-Pic" alt="cat" /> */}
           </Column>
         </Table>
         <SubHeadings>Skills</SubHeadings>
